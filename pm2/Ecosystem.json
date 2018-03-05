@@ -1,0 +1,137 @@
+{
+	"apps": [{
+		"name"        : "Emlice",  				// 应用名称
+		"script"      : "./app.js",  			// 实际启动脚本
+		"cwd"         : "./Emlice/",  			// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"www",
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules", 
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Emlice's Chat",  		// 应用名称
+		"script"      : "./index.js",  			// 实际启动脚本
+		"cwd"         : "./Vue-Chat-Generator/",  		// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"www",
+			"server",
+			"config"
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules", 
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Emlice's Static",  	// 应用名称
+		"script"      : "./index.js",  			// 实际启动脚本
+		"cwd"         : "./StaticServer/",  	// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"server",
+			"config"
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules",
+			"assets" 
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Vue-SSR-Readhub",  	// 应用名称
+		"script"      : "./start.js",  			// 实际启动脚本
+		"cwd"         : "./Vue-Nuxt/",  		// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"pages",
+			"layouts",
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules",
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Emlice's Blog",  		// 应用名称
+		"script"      : "./start.js",  			// 实际启动脚本
+		"cwd"         : "./blog.emlice.top/",  	// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"source",
+			"public"
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules",
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Request-process",  	// 应用名称
+		"script"      : "./index.js",  			// 实际启动脚本
+		"cwd"         : "./Request-process/",  	// 当前工作路径
+		"watch": [  							// 监控变化的目录，一旦变化，自动重启
+			"index.js"
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules",
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	},{
+		"name"        : "Vue-Music-Generator",  	// 应用名称
+		"script"      : "./index.js",  			// 实际启动脚本
+		"cwd"         : "./Vue-Music-Generator/",  	// 当前工作路径
+		"watch": [ 
+			"www", 							// 监控变化的目录，一旦变化，自动重启
+			"index.js"
+		],
+		"ignore_watch" : [  					// 从监控目录中排除
+			"node_modules",
+		],
+		"watch_options": {
+			"followSymlinks": false
+		},
+		"error_file" : "./logs/app-err.log",  	// 错误日志路径
+		"out_file"   : "./logs/app-out.log",  	// 普通日志路径
+		"env": {
+		  "NODE_ENV": "production"  			// 环境参数，当前指定为生产环境
+		}
+	}]
+}
+
